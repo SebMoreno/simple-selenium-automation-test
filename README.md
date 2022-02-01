@@ -60,7 +60,7 @@ and click on the "I'm Feeling Lucky" button
 so that I would be taken to the Devsavant's website
 ```
 2. Add a description to the test and to the scenario
-3. Implement the test in a separated `*.java` file and use Selenium for the browser automation
+3. Implement the test in a separated `*.java` class and use Selenium and chromedriver for the browser automation
 4. Implement a screen capture of the browser when the Devsavant website is shown
 5. The test should run and show results along with the other tests when executing `mvn test` command
 6. Add a mechanism to run only the Devsavant website test
