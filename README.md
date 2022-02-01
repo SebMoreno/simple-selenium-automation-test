@@ -25,9 +25,9 @@ This project contains a structure ready to implement automated test cases using 
 
 ### Part 1
 
-1. Make sure your environment is set up accordingly to the above part
+1. Make sure your environment is set up accordingly to the above section
 2. Fork this project into your personal account
-3. Clone the project repository into your environment
+3. Clone the project repository into your local environment
 4. Create a new branch in order to commit your work in it
 
 ### Part 2
@@ -37,7 +37,7 @@ This project contains a structure ready to implement automated test cases using 
     1. Define one **negative** scenario that you would test
     2. What would you assert?
     3. Write that scenario using Gherkin language in `timezone.feature` file
-3. Check how http://worldtimeapi.org/api/timezone/America/Bogota works    
+3. Check how http://worldtimeapi.org/api/timezone/America/Bogota endpoint works    
     1. Define two **negative** scenarios that you would test
     2. What would you assert on each?
     3. Write them in your feature file using `Scenario Outline` clause
@@ -46,8 +46,8 @@ This project contains a structure ready to implement automated test cases using 
 ### Part 3
 
 1. Implement the test steps in `StepDefinitions.java` file
-2. Your tests should run and show results when executing `mvn test` command
-3. Add a mechanism to run all the tests related with world time API only
+2. All the tests should run and show results when executing `mvn test` command
+3. Add a mechanism to run all the tests related with World Time API only
 4. Add a mechanism to run only the tests in the `Scenario Outline` clause
 
 ### Part 4
@@ -60,19 +60,20 @@ and click on the "I'm Feeling Lucky" button
 so that I would be taken to the Devsavant's website
 ```
 2. Add a description to the test and to the scenario
-3. Implement the test in a separated `*.java` file using Selenium
-4. Implement a screen capture of the browser when the Devsavant website is opened
-5. Your test should run and show results along with the other tests when executing `mvn test` command
-6. Add a mechanism to run only this test
+3. Implement the test in a separated `*.java` file and use Selenium for the browser automation
+4. Implement a screen capture of the browser when the Devsavant website is shown
+5. The test should run and show results along with the other tests when executing `mvn test` command
+6. Add a mechanism to run only the Devsavant website test
 
 ### Part 5
 
-1. Modify the `README.md` fileto add the following information
+1. Modify the `README.md` file in order to add the following information:
     - Your name, surname and email
     - How to run the World Time API tests only
     - How to run the Scenario Outline tests only
     - How to run the Devsavant website test only
-    - Any other description you consider relevant from your implementation of this challenge
+    - The expected location of the file containing the screen capture of the Devsavant website
+    - Any other information you consider relevant from your implementation of this challenge
 2. Push your work to the repo
 3. Create a merge request to the main branch
 4. Merge the changes to the main branch without deleting the source branch
