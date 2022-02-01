@@ -1,6 +1,6 @@
 # Devsavant Automation Test
 
-This project contains a structure ready to implement automated test cases using the following components:
+This project contains a structure ready to implement automated test cases using Cucumber and Selenium along with the following components:
 
 - JUnit Assert
 - Cucumber
