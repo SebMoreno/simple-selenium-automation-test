@@ -31,18 +31,23 @@ This project contains a structure ready to implement automated test cases using 
 
 1. Go to http://worldtimeapi.org/pages/examples
 2. Check how `http://worldtimeapi.org/api/timezone[/:area][/:location][/:region][.json|.txt]` endpoint works
-    - Define one **negative** scenario that you would test
-    - What would you assert? Include elements from both, the response attributes and the response content
-    - Write that scenario using Gherkin language in `worldtimeapi.feature` feature file
+    - Define a test scenario where:
+        - The user obtains the list of time zones
+        - Then takes the time zone in the exact 45th position, remember JSON arrays are zero-indexed
+        - Then gets the time for the obtained element
+        - Assert the response code
+        - Assert some of the elements of the response content using **regular expressions**
+    - Write that scenario using Gherkin language in the `worldtimeapi.feature` file
 3. Check how `http://worldtimeapi.org/api/ip[/:ipv4][.json|.txt]` endpoint works    
-    - Define two **negative** scenarios that you would test
-    - What would you assert on each? Include elements from both, the response attributes and the response content
-    - Write them in `worldtimeapi.feature` feature file using `Scenario Outline` clause
+    - Define two **negative** scenarios
+    - Write them in `worldtimeapi.feature` feature file using Gherkin language and `Scenario Outline` clause
+    - Assert the response code
+    - Assert some of the elements of the response content using **regular expressions** that work for both scenarios
 4. Include a description for the feature file and for each of the scenarios
 
 ### Part 2
 
-1. Implement the test steps in `StepDefinitions.java` file
+1. Implement the test steps in the `StepDefinitions.java` file
 2. All the tests should run and show results when executing `mvn test` command
 3. Add a mechanism to run all the tests related with World Time API only
 4. Add a mechanism to run only the tests in the `Scenario Outline` clause
