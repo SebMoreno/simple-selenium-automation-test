@@ -33,8 +33,8 @@ This project contains a structure ready to implement automated test cases using 
 2. Check how `http://worldtimeapi.org/api/timezone[/:area][/:location][/:region][.json|.txt]` endpoint works
     - Define a test scenario where:
         - The user obtains the list of time zones
-        - Then takes the time zone in the exact 45th position, remember JSON arrays are zero-indexed
-        - Then gets the time for the obtained element
+        - Then takes the time zone in the exact 45th position, remember Java arrays are zero-indexed
+        - Then gets the current time for the time zone that was obtained in the previous step
         - Assert the response code
         - Assert some of the elements of the response content using **regular expressions**
     - Write that scenario using Gherkin language in the `worldtimeapi.feature` file
