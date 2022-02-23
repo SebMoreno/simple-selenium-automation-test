@@ -49,7 +49,7 @@ This project contains a structure ready to implement automated test cases using 
 
 1. Implement the test steps in the `StepDefinitions.java` file
 2. All the tests should run and show results when executing `mvn test` command
-3. Add a mechanism to run all the tests related with World Time API only
+3. Add a mechanism to run only the tests in the part 1 but not the tests of the part 3
 4. Add a mechanism to run only the tests in the `Scenario Outline` clause
 
 ### Part 3
