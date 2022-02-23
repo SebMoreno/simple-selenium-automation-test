@@ -14,15 +14,15 @@ This project contains a structure ready to implement automated test cases using 
 - You need a personal Gitlab account: https://gitlab.com/users/sign_up
 - Make sure you have JDK 11 or newer installed in your environment
 - Maven 3.3 or newer is also required
-- Once you have cloned the project execute `mvn package` command from project root directory in order for the dependencies to be resolved
 - You should have Chrome or Chromium installed in your system
-- Follow this guidance in order to install **chromedriver**:
+- Follow this advice in order to install **chromedriver**:
     1. Chromedriver has to match the Chrome/Chromium version in your system. You can download it from: [https://chromedriver.chromium.org/downloads]
     2. Unzip the binary file and place it under `/usr/local/bin`
-        - It can be located under any directory that is part of the `$PATH` or the directory should be added to the `$PATH` environment variable
-        - Use of `System.setProperty("webdriver.chrome.driver", "path-to-chromedriver");` is discouraged as long as your project may not run in other systems
-- Fork this project into your personal account
-- Clone the project repository into your local environment
+        - Ultimately, it can be located under any directory that is part of the `$PATH` or the directory where it has been extracted should be added to the `$PATH` environment variable
+        - Use of `System.setProperty("webdriver.chrome.driver", "path-to-chromedriver");` is **discouraged** as long as your project may not run in other systems
+- Fork this project into your personal Gitlab account
+- Clone the project from your persoal Gitlab repository into your local environment
+- Once you have cloned the project execute `mvn package` command from project root directory in order for the dependencies to be resolved
 - Create a new branch and name it with your given name and surname using snake case
 
 ## Test
