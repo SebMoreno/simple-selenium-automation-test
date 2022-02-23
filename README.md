@@ -70,7 +70,7 @@ So that I would be taken directly to the most relevant result
 
 - Modify this `README.md` file in order to add the following information at the top of the file:
     - Your given name, surname and email
-    - How to run the World Time API tests only
+    - How to run the Part 1 tests only
     - How to run the Scenario Outline tests only
     - How to run the Devsavant website test only
     - The expected location of the file containing the screen capture of the Devsavant website
