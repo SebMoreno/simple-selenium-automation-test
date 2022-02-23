@@ -57,14 +57,16 @@ This project contains a structure ready to implement automated test cases using 
 1. In a separated feature file create a new test that covers the following user story:
 ```
 As a www.google.com user
-I want to type "Devsavant" in the search box and click on the "I'm Feeling Lucky" button
+I want to type a keyword in the search box and click on the "I'm Feeling Lucky" button
 So that I would be taken directly to the most relevant result
 ```
 2. Add a description to the test and to the scenario
-3. Implement the test in a separated `*.java` class and use Selenium and chromedriver for the browser automation
-4. Implement a screen capture of the browser when the Devsavant website is shown
-5. The test should run and show results along with the other tests when executing `mvn test` command
-6. Add a mechanism to run only the Devsavant website test
+3. Use "Devsavant" as keyword for the seach
+4. Implement the test in a separated `*.java` class.  Use Selenium and chromedriver for the browser automation
+5. In the step that performs the keyword search use a dynamic step definition name so that the same step would work with any keyword that is sent from the feature file
+6. Implement a screen capture of the browser when the Devsavant website is shown
+7. The test should run and show results along with the other tests when executing `mvn test` command
+8. Add a mechanism to run only the Devsavant website test
 
 ## To finish up
 
