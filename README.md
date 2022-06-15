@@ -1,5 +1,31 @@
 # Devsavant Automation Test
 
+## Author for the implementation
+Juan Sebastián Moreno Ruiz
+juansebasmorenoruiz@gmail.com
+[Github](https://github.com/SebMoreno)
+
+## Run instructions
+
+To run all the Part 1 tests
+```
+mvn test -Dcucumber.filter.tags="@WorldTimeApi"
+```
+
+To run the Scenario Outline tests of the Part 1 only
+```
+mvn test -Dcucumber.filter.tags="@WorldTimeApi and @FailPath"
+```
+
+To run the Google search for Devsavant test only
+```
+mvn test -Dcucumber.filter.tags="@GoogleSearch"
+```
+
+The screen capture of the Google Search test will be saved in the `target/googlesearch/resultpage.png` file.
+
+The project is using the ChromeDriver configuration via a maven dependencie, not depending on the actual webdriver being configured in the machine.
+
 This project contains a structure ready to implement automated test cases using Cucumber and Selenium along with the following components:
 
 - JUnit Assert
